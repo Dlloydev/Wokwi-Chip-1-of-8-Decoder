@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "author": "Dlloydev",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "chip-1-of-8-decoder",
+      "id": "1-of-8-decoder1",
+      "top": -142.98,
+      "left": -156.59,
+      "attrs": {}
+    },
+    { "type": "wokwi-gnd", "id": "gnd2", "top": -19.2, "left": -58.2, "attrs": {} },
+    {
+      "type": "wokwi-led-bar-graph",
+      "id": "bargraph1",
+      "top": -139.2,
+      "left": -24,
+      "attrs": { "color": "lime" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -34.15,
+      "left": -39.8,
+      "rotate": 180,
+      "attrs": { "value": "330" }
+    }
+  ],
+  "connections": [
+    [ "gnd2:GND", "r1:2", "black", [ "v-9.6" ] ],
+    [ "r1:1", "bargraph1:C8", "black", [ "v0", "h9.6", "v-19.2" ] ],
+    [ "bargraph1:C8", "bargraph1:C7", "black", [ "h19.42", "v-9.6" ] ],
+    [ "bargraph1:C7", "bargraph1:C6", "black", [ "h19.42", "v-9.6" ] ],
+    [ "bargraph1:C6", "bargraph1:C5", "black", [ "h19.42", "v-9.6" ] ],
+    [ "bargraph1:C5", "bargraph1:C4", "black", [ "h19.42", "v-9.61" ] ],
+    [ "bargraph1:C4", "bargraph1:C3", "black", [ "h19.42", "v-9.6" ] ],
+    [ "bargraph1:C3", "bargraph1:C2", "black", [ "h19.42", "v-9.6" ] ],
+    [ "bargraph1:C2", "bargraph1:C1", "black", [ "h19.42", "v-9.6" ] ],
+    [ "1-of-8-decoder1:D1", "bargraph1:A1", "green", [ "h0" ] ],
+    [ "1-of-8-decoder1:D2", "bargraph1:A2", "green", [ "h0" ] ],
+    [ "1-of-8-decoder1:D3", "bargraph1:A3", "green", [ "h0" ] ],
+    [ "1-of-8-decoder1:D4", "bargraph1:A4", "green", [ "h0" ] ],
+    [ "1-of-8-decoder1:D5", "bargraph1:A5", "green", [ "h0" ] ],
+    [ "1-of-8-decoder1:D6", "bargraph1:A6", "green", [ "h0" ] ],
+    [ "1-of-8-decoder1:D7", "bargraph1:A7", "green", [ "h0" ] ],
+    [ "1-of-8-decoder1:D8", "bargraph1:A8", "green", [ "h0" ] ]
+  ],
+  "dependencies": { "chip-1-of-8-Decoder": "github:Dlloydev/Wokwi-Chip-1-of-8-Decoder@1.0.0" }
+}
