@@ -46,5 +46,5 @@
     [ "1-of-8-decoder1:D7", "bargraph1:A7", "green", [ "h0" ] ],
     [ "1-of-8-decoder1:D8", "bargraph1:A8", "green", [ "h0" ] ]
   ],
-  "dependencies": { "chip-1-of-8-Decoder": "github:Dlloydev/Wokwi-Chip-1-of-8-Decoder@1.0.0" }
+  "dependencies": { "chip-1-of-8-Decoder": "github:Dlloydev/Wokwi-Chip-1-of-8-Decoder@1.0.1" }
 }

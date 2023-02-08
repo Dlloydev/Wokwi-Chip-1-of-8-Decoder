@@ -23,7 +23,7 @@ To use this chip in your project, include it as a dependency in your `diagram.js
 
 ```json
   "dependencies": {
-    "chip-1-of-8-Decoder": "github:Dlloydev/Wokwi-Chip-1-of-8-Decoder@1.0.0"
+    "chip-1-of-8-Decoder": "github:Dlloydev/Wokwi-Chip-1-of-8-Decoder@1.0.1"
   }
 ```
 
