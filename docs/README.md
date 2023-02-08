@@ -23,16 +23,16 @@ To use this chip in your project, include it as a dependency in your `diagram.js
 
 ```json
   "dependencies": {
-    "chip-1-of-8-Decoder": "github:Dlloydev/Wokwi-Chip-1-of-8-Decoder@1.0.1"
+    "chip-1-of-8-decoder": "github:Dlloydev/Wokwi-Chip-1-of-8-Decoder@1.0.1"
   }
 ```
 
-Then, add the chip to your circuit by adding a `chip-1-of-8-Decoder` item to the `parts` section of `diagram.json`:
+Then, add the chip to your circuit by adding a `chip-1-of-8-decoder` item to the `parts` section of `diagram.json`:
 
 ```json
   "parts": {
     ...,
-    { "type": "chip-1-of-8-Decoder", "id": "chip-1-of-8-Decoder1" }
+    { "type": "chip-1-of-8-decoder", "id": "chip-1-of-8-decoder1" }
   },
 ```
 
